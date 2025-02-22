@@ -19,7 +19,7 @@ const colorArray = ["#264653", "#e9c46a", "#2a9d8f", "#f4a261", "#e76f51"];
 
 class Circle {
     speed = 0.25;
-    radius = 50;
+    radius = 10;
 
     constructor() {
         this.x = Math.random() * (innerWidth - this.radius * 2) + this.radius;
@@ -60,7 +60,7 @@ class Circle {
             }
         } else {
             //Tween the radius shrink
-            if (this.radius > 50) {
+            if (this.radius > 10) {
                 this.radius -= 1;
             }
         }
